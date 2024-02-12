@@ -10,9 +10,10 @@ import { Link, Stack } from "expo-router";
 import React from "react";
 import HeaderButton from "../components/HeaderButton";
 import Welcome from "../components/Welcome";
-import NearJobs from "../components/NearJobs";
+import TypeJobs from "../components/TypeJobs";
 import Jobs from "../components/Jobs";
 import SearchJob from "../components/SearchJob";
+import PopularJobs from "../components/PopularJobs";
 
 const Home = () => {
   return (
@@ -37,7 +38,8 @@ const Home = () => {
         >
           <Welcome />
           <SearchJob />
-          <NearJobs />
+          <TypeJobs />
+          <PopularJobs />
           <Jobs />
         </View>
       </ScrollView>

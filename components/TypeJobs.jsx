@@ -10,7 +10,7 @@ import Card from "./Card";
 
 const JOB_TYPES = ["Fulltime", "Contractor", "Parttime", "Intern"];
 
-const NearJobs = () => {
+const TypeJobs = () => {
   const [typeActive, setTypeActive] = useState("Fulltime");
 
   return (
@@ -18,6 +18,9 @@ const NearJobs = () => {
       style={{
         width: "100%",
         marginTop: 6,
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "space-evenly",
       }}
     >
       <FlatList
@@ -38,7 +41,7 @@ const NearJobs = () => {
   );
 };
 
-export default NearJobs;
+export default TypeJobs;
 
 const styles = StyleSheet.create({
   lists: (active, item) => ({
@@ -47,7 +50,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 3,
     borderWidth: 0.5,
-    borderColor: "darkgrey",
+    borderColor: active === item ? "orangered" : "white",
     opacity: active === item ? 1 : 0.5,
   }),
   listItem: {
