@@ -6,7 +6,7 @@ import Card from "./Card";
 const PopularJobs = () => {
   const { data, isError, isLoading } = useFetch("search", {
     query: "React Native",
-    page: 1,
+    page: 2,
     num_pages: 1,
   });
 
@@ -17,6 +17,32 @@ const PopularJobs = () => {
         marginTop: 6,
       }}
     >
+      <View
+        style={{
+          marginTop: 10,
+          marginVertical: 5,
+          flex: 1,
+          alignItems: "center",
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}
+      >
+        <Text
+          style={{
+            color: "#aaa",
+          }}
+        >
+          Popular jobs
+        </Text>
+        <Text
+          style={{
+            color: "white",
+          }}
+        >
+          View All
+        </Text>
+      </View>
+
       {isLoading ? (
         <ActivityIndicator size={"large"} color={"darkgrey"} />
       ) : isError ? (

@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     borderRadius: 3,
     borderWidth: 0.5,
-    borderColor: active === item ? "orangered" : "white",
+    borderColor: active === item ? "orange" : "white",
     opacity: active === item ? 1 : 0.5,
   }),
   listItem: {

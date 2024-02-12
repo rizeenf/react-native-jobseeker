@@ -7,14 +7,14 @@ const Welcome = () => {
       <Text
         style={{
           color: "white",
-          fontSize: 14,
+          fontSize: 18,
           fontWeight: 500,
         }}
       >
         Welcome{" "}
         <Text
           style={{
-            color: "orangered",
+            color: "orange",
           }}
         >
           Rizki
@@ -23,15 +23,16 @@ const Welcome = () => {
       </Text>
       <Text
         style={{
+          marginTop: 5,
           color: "white",
-          fontSize: 18,
+          fontSize: 24,
           fontWeight: 500,
         }}
       >
         Find your{" "}
         <Text
           style={{
-            color: "orangered",
+            color: "orange",
           }}
         >
           dream{" "}
